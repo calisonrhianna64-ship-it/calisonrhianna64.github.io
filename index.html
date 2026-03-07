@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calison's Burger Store</title>
+  <style>
+    
+    body {
+      background: linear-gradient(to bottom, #ffe6e6, #fadadd);
+      font-family: 'Verdana', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    #loginSection {
+      background-color: #ffffff;
+      width: 350px;
+      margin: 100px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    }
+
+    #loginSection h2 {
+      color: #a10000;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 80%;
+      padding: 8px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 25px;
+      background-color: #a10000;
+      color: white;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #c50000;
+    }
+
+    
+    #myBusiness {
+      display: none;
+      max-width: 750px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0px 5px 25px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+
+    #myBusiness h1 {
+      color: #a10000;
+      text-align: center;
+    }
+
+    #myBusiness p, #myBusiness li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    hr {
+      margin: 20px 0;
+      border: 1px solid #ccc;
+    }
+
+    a {
+      color: #a10000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div id="loginSection">
+    <h2>Welcome to Calison's Burger Store</h2>
+    
+    <form onsubmit="document.getElementById('myBusiness').style.display='block'; document.getElementById('loginSection').style.display='none'; return false;">
+      
+      <p>Your Name: 
+        <input type="text" placeholder="Enter your name" required>
+      </p>
+      
+      <button type="submit">Enter Store</button>
+      
+    </form>
+  </div>
+
+  
+  <div id="myBusiness">
+
+    <header id="home">
+      <h1>Calison's Burger Store</h1>
+      <p><i>"Serious Flavor, Seriously Good."</i></p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a> |
+      <a href="#menu">Menu</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+      <section id="menu">
+        <hr>
+        <h3>Our Menu & Prices</h3>
+        <ul>
+          <li>Cheese Burger - ₱40</li>
+          <li>Double Patty Burger - ₱60</li>
+          <li>Ham & Egg Burger - ₱50</li>
+          <li>Hotdog Burger - ₱45</li>
+          <li>Beef Burger - ₱55</li>
+          <li>Orange Juice - ₱20</li>
+          <li>Mango Juice - ₱25</li>
+          <li>Apple Juice - ₱20</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <hr>
+        <h3>Contact Us</h3>
+        <p>Phone: 09535505057</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© Calison's Burger Store</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
