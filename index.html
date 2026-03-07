@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Calison's Burger Store</title>
+<style>
+
+body {
+    background:linear-gradient(to bottom #ffe6e6, #fadadd);
+    font-family:'Verdana', sans-serif;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+#loginSection {
+    background-color:#ffffff;
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px 
+    rgba(0,0,0,0.2);
+}
+
+#loginSection h2 {
+    color: #a100000;
+    font-size:24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #a100000;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #a500000;
+}
+
+#myBusiness {
+    display: none;
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px 
+    rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+#myBusiness h1 {
+    color: #a100000;
+    text-align: center;
+}
+
+#myBusiness p, #myBusiness li {
+    font-size: 18px;
+    line-height: 1.6px;
+}
+
+a {
+    color: #a100000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div id="loginSection">
+    <h2>Welcome to Calison's Burger Store</h2>
+    
+    <form onsubmit="
+    
+document.getElementByld('myBusiness').style.display='block';
+
+document.getElementBlyd('loginSection').style.display='none';
+    return false;">
+        
+<p>
+   Your name:<br>
+   <input type="text" placeholder="enter your name" required>
+</p>
+<buttom type="submit">Enter Store</buttom>
+</form>
+</div>
+
+<div id="myBusiness">
+    <h1>Calison's Burger Store</h1>
+    <p><i>"Serious Flavor, Seriously Good."</i></p>
+   
+   <h3>Our Menu & Prices</h3>
+    <ul>
+    <li>Cheese Burger - &#8369;40</li>
+    <li>Double Pattuy Burger - &#8396;60</li>
+    <li>Ham & Egg Burge - &#8369;50</li>
+    <li>Hatdog Burger - &#8369;45</li>
+    <li>Beef Burger - &#8369;55</li>
+    <li>Orange Juice - &#8369;20</li>
+    <li>Mango Juice - &#8369;25</li>
+    <li>Apple Juice - &#8369;20</li>
+    </ul>
+    
+    <h3>Contact Us</h3>
+    <p>09535505057</p>
+    </div>
+
+</body>
+</html>
